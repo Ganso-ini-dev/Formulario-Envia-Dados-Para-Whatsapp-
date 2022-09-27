@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitaar Instalação</title>
+    <style>
+ /*Responsivo celular largura maxima para exibição tamanho max width largura minima exibição tamanho min width*/
+   @media only screen and (max-width: 480px) {
+      body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+        }
+        .box{
+            color: white;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 15px;
+            width: 90%;
+        }
+        fieldset{
+            border: 3px solid dodgerblue;
+        }
+        legend{
+            border: 1px solid dodgerblue;
+            padding: 10px;
+            text-align: center;
+            background-color: dodgerblue;
+            border-radius: 8px;
+        }
+        .inputBox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 18px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: dodgerblue;
+        }
+ 
+
+ button {
+   width: 320px;
+   margin: 4px;    /*largura tamanho botao*/
+  cursor: pointer;
+  background-color: #25d366;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  height: 48px;
+}
+
+button img {
+  margin-right: 8px;
+;
+}
+
+a {
+  color: #25d366;
+}
+         
+          /*Responsivo largura maxima para exibição tamanho max width largura minima exibição tamanho min width*/
+   
+   @media only screen and (min-width: 481px) { body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+        }
+        .box{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            width: 30%;
+        }
+        fieldset{
+            border: 3px solid dodgerblue;
+        }
+        legend{
+            border: 1px solid dodgerblue;
+            padding: 10px;
+            text-align: center;
+            background-color: dodgerblue;
+            border-radius: 8px;
+        }
+        .inputBox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: dodgerblue;
+        }
+        #data_nascimento{
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+        #submit{
+            background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #submit:hover{
+            background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+        }}
+
+/*Responsivo largura maxima para exibição tamanho max width largura minima exibição tamanho min width*/
+   </style>       
+</head>
+<body>
+<form action="#" method="get" onsubmit="abrirWhatsapp()">
+    <div class="box">
+        <form action="#" method="get">
+            <fieldset>
+                <legend><b>Solicitar Instalação </b></legend>
+                <br>
+                <form action="#" method="get" onsubmit="abrirWhatsapp()">
+    <input type="text" name="nome" id="nome" class="inputUser" placeholder="Nome" required><br><br>
+    <input type="tel" name="telefone" id="telefone" class="inputUser" placeholder="Telefone" required><br><br>
+    <input type="text" name="cidade" id="cidade" class="inputUser" placeholder="Cidade" required><br><br>
+    <input type="text" name="endereco" id="endereco" class="inputUser"  placeholder="Endereço" required><br><br>
+    <input type="text" name="ref" id="ref" class="inputUser" placeholder="Ponto de Referência" required><br><br>
+<p>Selecione O Plano:</p>
+            <input type="radio" id="mbs1" name="planomb" value="150 Megas" checked>
+            <label for="150 Megas">150 Megas</label>
+            <br>
+            <input type="radio" id="mbs1" name="planomb" value="200 Megas" >
+            <label for="200 Megas">200 Megas</label>
+            <br>
+            <input type="radio" id="mbs1" name="planomb" value="300 Megas">   <label for="300 Megas">300 Megas</label>
+                 <br><br>
+    <button type="submit"><img src="https://matheuscostadesign.github.io/enviar-para-whatsapp/assets/whatsapp.svg" alt="Icone Whatsapp"><span>Solicitar</span>
+    </button>
+</form>
+</body>
+<script src="js/redirecionadwpp.js"></script>
+</html>
+
