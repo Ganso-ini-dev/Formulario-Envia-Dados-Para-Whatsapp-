@@ -1,5 +1,5 @@
 Fórmulario Funcionando só Criar Pasta js
-Colocar aquivo já dentro
+Colocar aquivo js dentro
 
 •o Estilo do Css só está Aplicado no Celular
 Só arrumar é pronto
